@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+}.main{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+     }
+     .value, .btn, .custom_value {
+       margin: 10px;
+     }
+     .minus-btn, .plus-btn ,.reset-btn {
+       background-color: aquamarine;
+       padding: 10px 15px;
+       border-radius: 5px;
+       border: none;
+       font-size: 20px;
+       margin-top: 10px;
+     }
+
+     
