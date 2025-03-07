@@ -1,22 +1,23 @@
+const plusBtn = document.querySelector('.plus-btn')
+const minusBtn = document.querySelector('.minus-btn')
+const byRange = document.querySelector('.range-value')
 const value = document.querySelector('.value')
-const minus = document.querySelector('.minus-btn')
-const plus = document.querySelector('.plus-btn')
-const ByValue = document.querySelector('.range-value')
-const resetValue = document.querySelector('.reset-btn')
+const reset = document.querySelector('.reset-btn')
 
-
-minus.addEventListener('click',()=>{
-       const countValue = parseInt(value.innerText)
-       const byRangeValue = parseInt(ByValue.value)
-       value.innerText = countValue - byRangeValue
+plusBtn.addEventListener('click',()=>{
+  const updatedValue = parseInt(value.innerText)
+  const changeByRange = parseInt(byRange.value)
+  value.innerText = updatedValue + changeByRange
 })
 
-plus.addEventListener('click',()=>{
-       const countValue = parseInt(value.innerText)
-       const byRangeValue = parseInt(ByValue.value)
-       value.innerText = countValue + byRangeValue
+minusBtn.addEventListener('click',()=>{
+  const updatedValue = parseInt(value.innerText)
+  const changeByRange = parseInt(byRange.value)
+  value.innerText = updatedValue - changeByRange
 })
 
-resetValue.addEventListener('click',()=>{
-       value.innerText = 0
+reset.addEventListener('click',()=>{
+  value.innerText = 0
 })
+
+

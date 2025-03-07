@@ -1,0 +1,11 @@
+.main{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+}
+.inputNum{
+       width: 15%;
+       height: 30px;
+       border-color: 2px solid black;
+}
